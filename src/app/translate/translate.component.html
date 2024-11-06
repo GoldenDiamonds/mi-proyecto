@@ -1,0 +1,12 @@
+<div>
+  <h2>Traductor</h2>
+  <textarea [(ngModel)]="textToTranslate" placeholder="Texto a traducir"></textarea>
+  <select [(ngModel)]="targetLanguage">
+    <option value="en">Inglés</option>
+    <option value="fr">Francés</option>
+    <option value="zu">Zulu</option>
+    <!-- Agrega más idiomas según sea necesario -->
+  </select>
+  <button (click)="translate()">Traducir</button>
+  <p>Traducción: {{ translatedText }}</p>
+</div>

@@ -1,0 +1,8 @@
+<div class="card" [ngClass]="{'fullscreen': isFullScreen}">
+    <h2>Título de la Tarjeta</h2>
+    <p>Contenido de la tarjeta...</p>
+    <button (click)="toggleFullScreen()">
+      {{ isFullScreen ? 'Salir de Pantalla Completa' : 'Pantalla Completa' }}
+    </button>
+  </div>
+  
